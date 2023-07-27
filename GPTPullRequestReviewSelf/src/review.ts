@@ -49,11 +49,13 @@ export async function reviewFile(targetBranch: string, fileName: string, httpsAg
           }]
         })
       });
-
+      console.log(request)
       const response = await request.json();
 
       choices = response.choices;
     }
+    console.log('OpenAi Response')
+    console.log(choices)
 
     if (choices && choices.length > 0) {
       const review = aoiEndpoint ? choices[0].message?.content : choices[0].text as string

@@ -11,12 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "@types/axios": "^0.14.0",
-    "axios": "^0.19.2",
     "azure-pipelines-task-lib": "^4.3.1",
     "binary-extensions": "^2.2.0",
-    "cacheable-lookup": "^7.0.0",
     "https": "^1.0.0",
-    "node-fetch": "^2.6.6",
+    "node-fetch": "^3.1.0",
     "node-fetch-with-proxy": "^0.1.6",
     "openai": "^3.2.1",
     "simple-git": "^3.17.0"
