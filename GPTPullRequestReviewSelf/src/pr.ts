@@ -1,6 +1,6 @@
 import * as tl from "azure-pipelines-task-lib/task";
 import { Agent } from 'https';
-import fetch from 'node-fetch';
+const fetch = require('node-fetch-with-proxy');
 
 export async function addCommentToPR(fileName: string, comment: string, httpsAgent: Agent) {
   const body = {

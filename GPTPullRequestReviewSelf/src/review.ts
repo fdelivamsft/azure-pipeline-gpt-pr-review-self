@@ -1,4 +1,5 @@
-import fetch from 'node-fetch';
+const fetch = require('node-fetch-with-proxy');
+
 import { git } from './git';
 import { OpenAIApi } from 'openai';
 import { addCommentToPR } from './pr';

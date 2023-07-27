@@ -1,10 +1,10 @@
 {
-  "id": "b42fa530-c4a6-11ed-87f6-d1f44a1fead1",
-  "name": "GPTPullRequestReview",
-  "friendlyName": "Review PullRequest by GPT",
-  "description": "This task use OpenAi GPT model to review PullRequests",
-  "author": "Mustapha Larhrouch",
-  "helpMarkDown": "[More Information](https://github.com/mlarhrouch/azure-pipeline-gpt-pr-review)",
+  "id": "0a806543-f0ad-449a-a9a5-da0d38c05236",
+  "name": "GPTPullRequestReviewSelf",
+  "friendlyName": "Review PullRequest by GPT With Proxy",
+  "description": "This task use OpenAi GPT model to review PullRequests with proxy based on mustaphalarhrouch's work.",
+  "author": "Francesco De Liva",
+  "helpMarkDown": "[More Information](https://github.com/fdelivamsft/azure-pipeline-gpt-pr-review-self)",
   "category": "Utility",
   "visibility": [
     "Build"
@@ -12,11 +12,11 @@
   "demands": [],
   "version": {
     "Major": "0",
-    "Minor": "11",
+    "Minor": "20",
     "Patch": "0"
   },
   "minimumAgentVersion": "1.95.0",
-  "instanceNameFormat": "GPTPullRequestReview $(message)",
+  "instanceNameFormat": "GPTPullRequestReviewSelf $(message)",
   "inputs": [
     {
       "name": "api_key",
@@ -44,7 +44,7 @@
     }
   ],
   "execution": {
-    "Node10": {
+    "Node16": {
       "target": "dist/index.js"
     }
   }
