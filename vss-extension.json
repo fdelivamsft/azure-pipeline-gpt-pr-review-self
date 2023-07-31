@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "GPTPullRequestReviewSelf",
     "name": "GPT Pull Request Review With Proxy",
-    "version": "0.22.0",
+    "version": "0.23.0",
     "publisher": "fdelivamsft",
     "galleryFlags": [
         "Public",

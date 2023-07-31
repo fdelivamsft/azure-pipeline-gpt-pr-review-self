@@ -9,6 +9,9 @@ export async function reviewFile(targetBranch: string, fileName: string, httpsAg
   console.log(`Start reviewing ${fileName} ...`);
 
   const patch = await git.diff([targetBranch, '--', fileName]);
+  console.log('Information shared to OpenAI');
+  console.log(patch);
+  console.log('End Information shared to OpenAI');
 
   const prompt = `
             Act as a code reviewer of a Pull Request, providing feedback on the code changes below.
